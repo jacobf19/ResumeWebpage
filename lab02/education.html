@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<br>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">About Me</a>
+        <a href="professionalexperience.html">Professional Experience</a>
+        <a class="active" href="education.html">Education</a>
+        <a href="volunteer.html">Volunteer Experience</a>
+        <a href="personalinterests.html">Personal Interests</a>
+        <a href="references.html">References</a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <h1>Education</h1>
+        <hr>
+        <h2>University of Washington</h2>
+        <h3>Bachelor's in Geography with Honors, Class of 2021</h3>
+        <p>
+            As a geography major, I have pursued coursework and research which has developed two main groups of skill: Technical mapping software ability using <strong>ArcGIS(Pro, Desktop, Online)</strong> <strong>QGIS</strong>, <strong>Python</strong> and <strong>SQL</strong>, and writing for the purpose of clear communication research.<br>
+            <br>
+            On the technical side, the development of software skills has been a challenging yet exciting process of growing in abilities which allow me to quickly anaylze and display data to communicate and apply findings in a countless number of contexts.<br>
+            <br>
+            Even the best data analysis and visualization is useless without contextualization and additional explanation, which provided the motivation for me to practice academic writing within geography. I have always appreciated well-crafted books, articles, and research publications from a readers perspective, and briefly considered a career in journalism prior to geography, which gave additional fuel to becoming a capable writer in my own right.<br>
+            <br>
+            Below I have listed a series of courses from my time at the UW which contributed to my software and writing skills. Each is accompanied by dates taken and a short description.<br>
+        </p>
+        <h3>Software and Mapping Courses</h3>
+        <p>
+            Mobile and Web GIS, September 2021 – Present – In progress.<br>
+            <br>
+            GIS Database Management, January 2021 - March 2021 - Mapped LIDAR flood impact data in <strong>Jupyter Notebooks</strong> solely using <strong>Python</strong>.<br>
+            <br>
+            Technical Foundations of Informatics, September 2020 - December 2020 - Constructed and managed datasets in <strong>R</strong> with <strong>SQL</strong>, created applications using <strong>Shiny</strong>, <strong>tidyverse</strong>, <strong>ggplot2</strong> and <strong>Markdown</strong> within <strong>R</strong>.<br>
+            <br>
+            Advanced Quantitative Methods, June 2020 - August 2020 - Designed and implemented spatial statistical tests to identify locations of robbery hotspots in Seattle using <strong>Excel</strong> and <strong>ArcGIS Pro</strong>.<br>
+            <br>
+        </p>
+        <h3>Writing and Research Courses</h3>
+        <p>
+            <a href = "https://seattlegeography2020.com/housing-moratorium/"
+                title = "Geography Honors Eviction Moratorium Research Project">Geography Honors Program Research</a>, September 2020 - June 2021 - COVID-19 eviction moratoria research involving interviews with City of Seattle leadership and discourse analysis in <strong>Atlas TI</strong>.<br>
+            <br>
+            Student Research Team Lead, November 2020 - March 2021 - Research team lead for school board redistricting project.<br>
+            <br>
+            <a href = "https://www.linkedin.com/in/jakefell7/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACa1w70BtAEAp5LA7gWZEcqjUJvhEEtLc_s,1591131122509)/"
+                title = "Military Conscription Literature Review">Explanation and Understanding in Geography</a>, March 2020 - June 2020 - Researched and produced a literature review on the national impacts of mandatory military conscription using domestic and international research.<br>
+            <br>
+        </p>
+        <hr>
+        <img src ="https://github.com/jacobf19/Projects/blob/main/HonorsTeam.jpg?raw=true" style="width: 50%; height: auto; border: 5px solid #555;">
+        <p>
+            2021 Geography Honors Program Research Team (Not Pictured: Linli Shi).<br>
+            <hr>
+            <br>
+            Though these courses have certain focuses, each of these and many more have taught me both quanitative and qualitative skills inside and outside of geography and given me a desire to continue growing in beyond my time at UW.
+        </p>
+    </div>
+
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create a column layout with Flexbox */
+        .row {
+          display: flex;
+        }
+        
+        /* Left column (menu) */
+        .left {
+          flex: 35%;
+          padding: 15px 0;
+        }
+        
+        .left h2 {
+          padding-left: 8px;
+        }
+        
+        /* Right column (page content) */
+        .right {
+          flex: 65%;
+          padding: 15px;
+        }
+        
+        /* Style the search box */
+        #mySearch {
+          width: 100%;
+          font-size: 18px;
+          padding: 11px;
+          border: 1px solid #ddd;
+        }
+        
+        /* Style the navigation menu inside the left column */
+        #myMenu {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        #myMenu li a {
+          padding: 12px;
+          text-decoration: none;
+          color: black;
+          display: block
+        }
+        
+        #myMenu li a:hover {
+          background-color: #eee;
+        }
+        </style>
+        </head>
+    
+        <div>
+            <h2>Search Menu</h2>
+            <p>Search for a specific page.</p>
+        </div>   
+        <div class="row">
+          <div class="left" style="background-color:#bbb;">
+            <h2>Menu</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Professional Experience</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Volunteer Experience</a></li>
+              <li><a href="#">Personal Interests</a></li>
+              <li><a href="#">References</a></li>
+            </ul>
+          </div>
+          
+          <div class="right" style="background-color:#ddd;">
+            <h2>Search</h2>
+          </div>
+        </div>
+        
+        <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

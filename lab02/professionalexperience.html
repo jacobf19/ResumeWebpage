@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Professional Experience</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <br>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">About Me</a>
+        <a class="active" href="professionalexperience.html">Professional Experience</a>
+        <a href="education.html">Education</a>
+        <a href="volunteer.html">Volunteer Experience</a>
+        <a href="personalinterests.html">Personal Interests</a>
+        <a href="references.html">References</a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <h1>Professional Experience</h1>
+        <hr>
+        <h2>TDS Telecom</h2>
+        <h3>GIS Engineering Intern, May 2021 - Present</h3>
+        <p>
+            Using <strong>ArcGIS Pro</strong> mapping software, primarily with <strong>Python</strong> and <strong>SQL</strong>, I designed fiber internet networks in 30 telephone exchanges across the United States, as part of the federal ACAM grant, to provide internet accessibility to underserved rural and suburban communities. This effort required collaboration with teammates to meet regular deadlines for designs, which were then followed up with cost analyses for the designs using <strong>Excel</strong> and presentation of the designs and costs before management in weekly meetings.<br>
+            <br>
+            In addition to this project, I wrote and updated 3 <strong>Python</strong> script tools for <strong>ArcGIS Pro</strong> to be used by other teams within the organization for accurate data storage and documentation.<br>
+            <br>
+            Finally, during the tumultuous wildfire and hurricane season of 2021 across the United States, I worked with a team to create <strong>ArcGIS Online</strong> dashboards showing potential and actual natural disaster hazards to TDS internet infrastructure. These dashboards tracked the live locations of wildfires and hurricanes using time-enabled data with <strong>ArcGIS WebMaps</strong>.<br>
+            <br>
+            All of these projects were managed using <strong>JIRA</strong> to track the design, build, test, and implementation phases of the tasks and to share updates with others in the organization.<br>
+        </p>
+    </div>
+
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create a column layout with Flexbox */
+        .row {
+          display: flex;
+        }
+        
+        /* Left column (menu) */
+        .left {
+          flex: 35%;
+          padding: 15px 0;
+        }
+        
+        .left h2 {
+          padding-left: 8px;
+        }
+        
+        /* Right column (page content) */
+        .right {
+          flex: 65%;
+          padding: 15px;
+        }
+        
+        /* Style the search box */
+        #mySearch {
+          width: 100%;
+          font-size: 18px;
+          padding: 11px;
+          border: 1px solid #ddd;
+        }
+        
+        /* Style the navigation menu inside the left column */
+        #myMenu {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        #myMenu li a {
+          padding: 12px;
+          text-decoration: none;
+          color: black;
+          display: block
+        }
+        
+        #myMenu li a:hover {
+          background-color: #eee;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Search Menu</h2>
+        <p>Search for a specific page.</p>
+        
+        <div class="row">
+          <div class="left" style="background-color:#bbb;">
+            <h2>Menu</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Professional Experience</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Volunteer Experience</a></li>
+              <li><a href="#">Personal Interests</a></li>
+              <li><a href="#">References</a></li>
+            </ul>
+          </div>
+          
+          <div class="right" style="background-color:#ddd;">
+            <h2>Search</h2>
+          </div>
+        </div>
+        
+        <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
