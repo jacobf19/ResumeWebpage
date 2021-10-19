@@ -1,4 +1,4 @@
-#ResumeWebpage Repository
+ResumeWebpage Repository
 
 This repository is for GEOG 495 lab 02
 
